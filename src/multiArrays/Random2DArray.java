@@ -1,5 +1,6 @@
 package multiArrays;
 
+import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -20,7 +21,7 @@ public class Random2DArray {
     public static int[][] methodeName(int num, int num2) {
 
         int[][] arr = new int[num][num2];
-        Random random = new Random();
+        Random random = new SecureRandom();
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
 

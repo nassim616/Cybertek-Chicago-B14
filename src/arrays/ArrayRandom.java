@@ -1,5 +1,6 @@
 package arrays;
 
+import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -8,7 +9,7 @@ public class ArrayRandom {
 
 //        6) Create an array with 50 random numbers in the range of 1-100. Then print the arra
 
-        Random random = new Random();
+        Random random = new SecureRandom();
 
         int [] arr = new int [50];
         for( int i = 0 ; i < arr.length ; i++) {

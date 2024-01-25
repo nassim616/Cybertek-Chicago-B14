@@ -1,13 +1,14 @@
 //package DoWhileLoop;
 //
-//import java.util.Random;
+
+import java.security.SecureRandom;
 import java.util.Random;
 import java.util.Scanner;
 
 public class guessTask {
    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-       Random Random = new Random();
+       Random Random = new SecureRandom();
 
         int randomNumber = Random.nextInt(100) + 1;
 
