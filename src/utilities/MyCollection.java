@@ -28,7 +28,7 @@ public class MyCollection {
             System.out.println("Enter word");
             words.add(scanner.nextLine());
             System.out.println("Are you done y/n ?");
-            if (scanner.nextLine().equals("y")) {
+            if ("y".equals(scanner.nextLine())) {
                 break;
             }
         }

@@ -16,7 +16,7 @@ public class ForEachLoopCitties {
         boolean check = false;
         int count = 0;
         for(String city: cities) {
-            if(city.equalsIgnoreCase("Chicago")) {
+            if("Chicago".equalsIgnoreCase(city)) {
                 check = true;
                 count++;
             }
