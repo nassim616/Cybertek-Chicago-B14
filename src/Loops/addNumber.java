@@ -24,7 +24,7 @@ public class addNumber {
         System.out.println("Would you like to add 1");
         String check = input.nextLine();
         int number = 0;
-        while (check.equals("yes") || check.equals("y")) {
+        while ("yes".equals(check) || "y".equals(check)) {
             number++;
             System.out.println("Would you like to add 1");
             check = input.nextLine();

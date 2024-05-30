@@ -12,7 +12,7 @@ public class BestBuy {
 }
 static {
     System.out.println("run 2nd");
-    if(day.equals("monday")){         // static block
+    if("monday".equals(day)){         // static block
         numOfcumputers = 60;
 
     }else{

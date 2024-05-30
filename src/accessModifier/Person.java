@@ -31,7 +31,7 @@ private String name;
     }
 
     public void setGender(String gender) {
-        if(gender.equalsIgnoreCase("male") || gender.equalsIgnoreCase("female")){
+        if("male".equalsIgnoreCase(gender) || "female".equalsIgnoreCase(gender)){
             this.gender = gender;
         }
         else {

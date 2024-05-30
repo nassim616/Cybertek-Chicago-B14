@@ -43,7 +43,7 @@ public class DebitCard {
             System.out.println("Invalid pin");
         }
 
-        if (cardType.equalsIgnoreCase("mastercard") || cardType.equalsIgnoreCase("visa")) {
+        if ("mastercard".equalsIgnoreCase(cardType) || "visa".equalsIgnoreCase(cardType)) {
             this.cardType = cardType;
         } else {
             System.out.println("Invalid card type");
