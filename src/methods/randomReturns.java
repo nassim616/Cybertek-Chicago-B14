@@ -1,5 +1,6 @@
 package methods;
 
+import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -15,7 +16,7 @@ public class randomReturns {
 
     public static int[] createRandomArray(int size, int bound) {
         int[] arr = new int[size];
-        Random random = new Random();
+        Random random = new SecureRandom();
         for (int i = 0; i < size; i++) {
             int ran = random.nextInt(bound) + 1;
             arr[i] = ran;
