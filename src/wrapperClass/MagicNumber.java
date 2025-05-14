@@ -1,5 +1,6 @@
 package wrapperClass;
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -16,7 +17,7 @@ public class MagicNumber {
 
     public void generateNumbers(int size){
         numbers.clear();
-        Random random = new Random();
+        Random random = new SecureRandom();
         for (int i = 0; i < size; i++){
             numbers.add(random.nextInt(1000));
         }
@@ -24,7 +25,7 @@ public class MagicNumber {
 
     public void generateEvens(int size) {
 
-        Random random = new Random();
+        Random random = new SecureRandom();
         numbers.clear();
         while (true) {
             int i = random.nextInt(100);
